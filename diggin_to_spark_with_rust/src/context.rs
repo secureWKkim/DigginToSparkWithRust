@@ -1,20 +1,8 @@
 use std::fs::File;
 
-// #[derive(Debug)]
+//TODO: String 스택/힙 할당 & 5.1 맨 밑 구조체의 소유권 내용 다루기.
+
 pub struct SparkContext {
-    master: String,
-    py_files: Vec<File>
-}
-
-impl SparkContext {
-    // 인자 아무것도 안 받을 때 어떻게 하면 좋을까.
-    // pub fn stop(&self) {}
-
-    pub fn addPyFile(&self, path : &str) {
-        //ref: https://doc.rust-lang.org/std/fs/struct.File.html
-        // open 메서드 쓰면 .py 파일 경로 입력해야 하는 번거로움이 있어서.
-        py_files.push(File::create(path));
-    }
-
-    
+    pub master: String,
+    pub py_files: Vec<File>
 }
